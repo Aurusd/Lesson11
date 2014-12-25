@@ -7,7 +7,7 @@ public class Main{
 
     public static void main(String[] args) throws CloneNotSupportedException {
         Human h1 = new Human("Dima",29, Human.Sex.MAN, Human.Temperament.PHLEGMATIC);
-        Human h2 = new Human("Alexey",29, Human.Sex.MAN, Human.Temperament.PHLEGMATIC);
+        Human h2 = new Human("Dima",29, Human.Sex.MAN, Human.Temperament.PHLEGMATIC);
         Human h3 = new Human("Vasil",30, Human.Sex.MAN,Human.Temperament.MELANCHOLIC);
 
         System.out.println("String 1-st is " + h1.toString());

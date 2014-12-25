@@ -108,8 +108,8 @@ public class Human implements Cloneable{
         Human other = (Human)obj;
         return (this.Name == other.Name) &&
                 (this.age == other.age) &&
-                (this.sex == other.sex) &&
-                (this.temperament == other.temperament);
+                (this.sex == sex) &&
+                (this.temperament == temperament);
   }
     @Override
     public Object clone() throws CloneNotSupportedException {
