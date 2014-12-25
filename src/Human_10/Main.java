@@ -3,7 +3,7 @@ package Human_10;
 
 import java.io.*;
 
-public class Main implements Serializable {
+public class Main {
 
 
     public static void main(String[] args) throws CloneNotSupportedException {
@@ -37,6 +37,8 @@ public class Main implements Serializable {
         System.out.println(h3.Name + "," + h3.age);
         System.out.println(h4.Name + "," + h4.age);
 
+        //Serialization---------------------------------------------------------------//
+
         try {
             // запись
             FileOutputStream fos = new FileOutputStream("temp.out");
@@ -53,7 +55,7 @@ public class Main implements Serializable {
         ObjectInputStream oin  = new ObjectInputStream(fis);
             try {
                 h1_1 = (Human) oin.readObject();
-                System.out.println("Human Name" + h1_1.Name);
+                System.out.println("Human Name " + h1_1.Name);
             } finally {
                 oin.close();
             }
