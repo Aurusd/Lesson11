@@ -6,7 +6,7 @@ public class Main{
 
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        Human h1 = new Human("Dima",29, Human.Sex.MAN, Human.Temperament.PHLEGMATIC);
+        Human h1 = new Human("Dima",29, Human.Sex.MAN, Human.Temperament.MELANCHOLIC);
         Human h2 = new Human("Dima",29, Human.Sex.MAN, Human.Temperament.PHLEGMATIC);
         Human h3 = new Human("Vasil",30, Human.Sex.MAN,Human.Temperament.MELANCHOLIC);
 
@@ -23,9 +23,9 @@ public class Main{
         System.out.println("---------------------------");
 
         if (h1.equals(h2)) System.out.println(h1.Name + " and " + h2.Name + " are equal");
-        else System.out.println(h1.Name + " and " + h2.Name + "are not equal");
+        else System.out.println(h1.Name + " and " + h2.Name + " are not equal");
         if (h2.equals(h3)) System.out.println(h2.Name + " and " + h3.Name + " are equal");
-        else System.out.println(h2.Name + " and " + h3.Name + "are not equal");
+        else System.out.println(h2.Name + " and " + h3.Name + " are not equal");
 
 
         Human h4 = (Human) h3.clone();
