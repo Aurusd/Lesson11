@@ -3,7 +3,7 @@ package Human_10;
 
 import java.io.*;
 
-public class Main implements Serializable {
+public class Main implements Serializable,Cloneable {
 
 
     public static void main(String[] args) throws CloneNotSupportedException {
