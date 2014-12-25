@@ -1,7 +1,5 @@
 package Human_10;
 
-import java.io.Serializable;
-
 /**
  * Created by Dagon on 18.12.2014.
  * public String toString()
@@ -73,7 +71,7 @@ import java.io.Serializable;
  Возвраты:
  клон этого экземпляра.
  */
-public class Human implements Serializable,Cloneable{
+public class Human implements Cloneable{
 
     enum Sex {MAN, WOMAN}
     enum Temperament {CHOLERIC, PHLEGMATIC, MELANCHOLIC, SANGUINE }
